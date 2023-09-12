@@ -43,6 +43,7 @@
 		<imagetarget id='Logo KE' src='targets/Logo KE.jpeg'></imagetarget>
 		<imagetarget id='Logo RTV3D completo' src='targets/Logo RTV3D completo.png'></imagetarget>
 		<imagetarget id='Logo RTV3D completo 1' src='targets/Logo RTV3D completo 1.png'></imagetarget>
+		<imagetarget id='Logo KE mod' src='targets/Logo KE mod.jpeg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -99,7 +100,7 @@
         });;
         
     </script>
-    <script src="Build/Build.loader.js"></script>
+    <script src="Build/Build2.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -111,9 +112,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Build.data",
-                    frameworkUrl: "Build/Build.framework.js",
-                    codeUrl: "Build/Build.wasm",
+                    dataUrl: "Build/Build2.data",
+                    frameworkUrl: "Build/Build2.framework.js",
+                    codeUrl: "Build/Build2.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "Presentación AR x RTV3D",
